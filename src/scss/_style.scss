@@ -1,0 +1,105 @@
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.about1{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Assets/about-page-img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .reviews-section img {
+    width: 15%;
+    border-width: thin;
+}
+.contact1{
+    background-image: url(../Assets/contact-page-img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-section img {
+    width: 15%;
+    border-width: thin;
+}
+
+.card-responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto; /* Allow height to adjust based on content */
+  max-width: 100%; /* Ensure the card doesn't exceed its container */
+  padding: 1rem; /* Add padding for better spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Slightly round corners */
+  transition: transform 0.2s; /* Add some animation */
+}
+
+// .card-responsive:hover {
+//   transform: scale(1.05); /* Slightly scale up on hover */
+// }
+
+.card-responsive.custom-image {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Round top corners */
+}
+
+.card-responsive.text-grey {
+  color: grey; /* Adjust text color */
+}
+
+.card-responsive.text-success {
+  color: green; /* Adjust success text color */
+}
+
+
+.card-responsive2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Allow the card to take full height */
+  max-width: 300px; /* Set a max width for uniformity */
+  margin: 0 auto; /* Center the card in its container */
+  padding: 1rem; /* Padding for spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+// .card-responsive2:hover {
+//   transform: scale(1.05); /* Slightly scale on hover */
+// }
+
+.custom-image {
+  width: 100%; /* Make image responsive */
+  height: 100px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 8px 8px 0 0; /* Round top corners */
+}
+
+// .text-grey, .text-success {
+//   margin: 0.5rem 0; /* Add some margin for spacing */
+// }
+
+.btn-new {
+  width: 100%; /* Full width for the button */
+  margin-top: auto; /* Push button to the bottom */
+  font-size: 1rem; /* Button text size */
+}
+
+/* Ensure card adjusts well on smaller screens */
+@media (max-width: 768px) {
+  .card-responsive2 {
+      max-width: 100%; /* Allow cards to fill the container */
+      padding: 0.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .btn-new {
+      font-size: 0.9rem; /* Slightly smaller button text */
+  }
+}
